@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg "data-bs-theme="dark" style="background-color: rgb(153, 214, 62);">
+        <div class="container-fluid">
+          
+            <a class="navbar-brand fw-bold" href="#">Mikail Ali</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+    <!-- container start -->
+    <div class="container-fluid bg-info mt-3">
+        <hr>
+        <h3 class="display-6 fw-bold">Contoh Collaps 1</h3>
+    </div>
+
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-danger" 
+        data-bs-toggle="collapse" 
+        href="#Aufa" 
+        role="button" 
+        aria-expanded="false" 
+        aria-controls="collapseExample">
+         Aufa
+        </a>
+
+        <button class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#Gufron" 
+        aria-expanded="false" 
+        aria-controls="collapseExample">
+         Gufron
+        </button>
+
+        <a class="btn btn-danger" 
+        data-bs-toggle="collapse" 
+        href="#Fayyadh" 
+        role="button" 
+        aria-expanded="false" 
+        aria-controls="collapseExample">
+         Fayyadh
+        </a>
+
+        <button class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#Kafka" 
+        aria-expanded="false" 
+        aria-controls="collapseExample">
+         Kafka
+        </button>
+      </p>
+
+      <div class="collapse" id="Aufa">
+        <div class="card card-body">Aufa Irfan</div>
+      </div>
+      <div class="collapse" id="Fayyadh">
+        <div class="card card-body">Fayyadh Alkatiri</div>
+      </div>
+      <div class="collapse" id="Kafka">
+        <div class="card card-body">Kafka Albizard</div>
+      </div>
+      <div class="collapse" id="Gufron">
+        <div class="card card-body">Gufron Wicaksono</div>
+      </div>
+
+    <div class="container-fluid bg-info mt-3">
+        <hr>
+        <h3 class="display-6 fw-bold">Contoh Collaps 2</h3>
+    </div>
+
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" 
+        data-bs-toggle="collapse" 
+        href="#multiCollapseExample1" 
+        role="button" 
+        aria-expanded="false" 
+        aria-controls="multiCollapseExample1">Toggle first element</a>
+        
+        <button class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#multiCollapseExample2" 
+        aria-expanded="false" 
+        aria-controls="multiCollapseExample2">Toggle second element</button>
+
+        <button class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#multiCollapseExample3" 
+        aria-expanded="false" 
+        aria-controls="multiCollapseExample3">Toggle third element</button>
+
+        <button class="btn btn-primary" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target=".multi-collapse" 
+        aria-expanded="false" 
+        aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Toggle both elements</button>
+
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="container-fluid bg-info mt-3">
+        <hr>
+        <h3 class="display-6 fw-bold">Contoh Grid dan Acordion</h3>
+    </div>
+    
+        <div class="row">
+          <div class="col">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #4
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Accordion Item #5
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Accordion Item #6
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+    <!-- container end -->
+
+  </body>
+</html>
